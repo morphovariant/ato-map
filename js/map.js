@@ -326,10 +326,14 @@ var bldgMarker = function(bldgData, circleOptions) {
 };
 
 $(function() {
-    $( "#bldgs" ).autocomplete({
-        source: bldgNames
+    $("#bldgs").autocomplete({
+        source: bldgNames,
+        open: function(event, ui) {
+            $('.ui-autocomplete').off('menufocus hover mouseover mouseenter');
+        }
     });
 });
+
 
 
 findBldg = function() {
