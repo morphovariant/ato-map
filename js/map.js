@@ -222,7 +222,7 @@ var buildInfoWindows = function() {
         }
 
         if (d.dining) {
-            bldgData += '<h4><a href="' + d.diningUrl + '">' + d.dining + '</a></h4><p>'
+            bldgData += '<h4><a href="' + d.diningUrl + '" target="_blank">' + d.dining + '</a></h4><p>'
                 + d.diningHours + '</p>';
             var diningOptions = {
                 strokeColor: '#00bbe3',
@@ -259,15 +259,15 @@ var buildInfoWindows = function() {
         }
 
         if (d.serviceDryClean) {
-            bldgData += '<h4><a href="' + d.serviceDryCleanUrl + '">' + d.serviceDryClean + '</a></h4>';
+            bldgData += '<h4><a href="' + d.serviceDryCleanUrl + '" target="_blank">' + d.serviceDryClean + '</a></h4>';
         }
 
         if (d.serviceShoe) {
-            bldgData += '<h4><a href="' + d.serviceShoeUrl + '">' + d.serviceShoe + '</a></h4>';
+            bldgData += '<h4><a href="' + d.serviceShoeUrl + '" target="_blank">' + d.serviceShoe + '</a></h4>';
         }
 
         if (d.serviceCarWash) {
-            bldgData += '<h4><a href="' + d.serviceCarWashUrl + '">' + d.serviceCarWash + '</a></h4><p>'
+            bldgData += '<h4><a href="' + d.serviceCarWashUrl + '" target="_blank">' + d.serviceCarWash + '</a></h4><p>'
                 + d.serviceCarWashHours + '</p>';
         }
 
